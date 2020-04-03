@@ -1,0 +1,19 @@
+page-detalhe-curso-complementar {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+        }
+      }
+
+      .ion_icon{
+        position: absolute;
+        left: 90%;
+        color:#f4f4f4;
+        opacity: 0.6;
+        }
+
+}

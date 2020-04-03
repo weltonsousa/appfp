@@ -1,0 +1,7 @@
+page-tab-aluno {
+    ion-tabs {
+
+        --ion-tabbar-background-color: red;
+        --ion-tabs-background-color:var(--ion-tabbar-background-color, red);
+        }
+}

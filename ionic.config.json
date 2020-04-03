@@ -1,0 +1,7 @@
+{
+  "name": "fp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,56 @@
+page-mais {
+    .corpo {
+        background-color: #202020;    
+    }
+    .img {
+        // left: 35%;
+        // text-align: center;
+        border-radius: 50%;
+        width: 35%;
+        height: 20%;
+        position: absolute;
+        top: 7%;
+      }
+
+      .imgNotificacao {
+        width: 5%;
+        position: absolute;
+      }
+      .btnNotificacao {
+        position: absolute;
+        font-size: 1.23em;
+        font-weight: 500;
+        color: #A7A5A4;
+        background-color: transparent;
+        width: 38%;
+        text-transform: none;
+        border-bottom-color: transparent !important;
+        box-shadow: none !important;
+        padding-left: 13px;
+    }
+    .ion_icon{
+    color:#f4f4f4;
+    opacity: 0.6;
+    font-size: 5px;
+    padding-left: 1300px;
+    }
+    .nome{
+      position: relative;
+      top: 30%;
+      text-align: center;
+      font-size: 2.1em;
+      font-weight: bolder;
+      background: -webkit-linear-gradient(30deg,#5fc167,#318331);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tipoDeAssinatura{
+      position: relative;
+      text-align: center;
+      top: 31.5%;
+      // left: 29%;
+      font-size: 1.3em;
+      font-weight: 400;
+      color: white;
+    }
+}

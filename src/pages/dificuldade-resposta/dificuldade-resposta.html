@@ -1,0 +1,14 @@
+<ion-content>
+  <br>
+  <img src="assets/img/Seta_Retorno.png" style="position: relative;left: 8%; width:30px;height:30px;" (click)="back()">
+  <br>
+  <br>
+  <div style="position: relative; left: 5%; font-size: 1.3em; font-weight: bolder; color: #20953d; width: 90%;">{{pergunta.texto_subcategoria_pergunta}}</div>
+  <br>
+  <div style="position: relative; left: 5%; font-size: 0.8em; font-weight: bolder; color: #a2a2a2; width: 90%;">{{pergunta.texto_subcategoria_resposta}}</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div style="position: absolute; font-size: 0.8em; font-weight: bolder; color: #20953d; width: 100%; text-align: center;">Esse artigo lhe foi útil ?</div>
+  <br>
+  <button padding ion-button round class="btn" color="verde" style="left: 27%;" (click)="updateSim()">Sim</button>
+  <button padding ion-button round outline class="btn" color="light" style="left: 29%;" (click)="updateNao()">Não</button>
+</ion-content>

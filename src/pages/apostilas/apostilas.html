@@ -1,0 +1,53 @@
+<!--
+  Generated template for the MaisPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="corpo">
+  <br>
+  <img src="assets/img/Logo_FP.png" style="position: relative; left: 6%; width:25px;">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div style="position: relative; width: 100%; text-align: center; font-size: 1.6em;color: white; font-weight: bolder;">Selecione sua <br>Apostila</div>
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let apostila of apostilas" col-4>
+          <ion-card *ngIf="apostila.nivel <= apostila.nivel_do_usuario && apostila.pago == 1 && apostila.franquia_ou_propria == 1" style="background-color: transparent;box-shadow: none !important;">
+            <img *ngIf="apostila.active == 1" src="{{apostila.img_apostila}}" style="width: 100%;" (click)=abrirApostila(apostila)/>
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+          <ion-card *ngIf="apostila.nivel > apostila.nivel_do_usuario && apostila.franquia_ou_propria == 1 " style="background-color: transparent;box-shadow: none !important;">
+            <img *ngIf="apostila.active == 0 || apostila.active == 1" src="{{apostila.img_apostila_disabilitada}}" style="width: 100%;" />
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+          <ion-card *ngIf="dados.dados.aluno == 0 " style="background-color: transparent;box-shadow: none !important;">
+            <img src="{{apostila.img_apostila_disabilitada}}" style="width: 100%;" />
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+          <ion-card *ngIf="apostila.numero_apostila <= apostila.nivel_do_usuario && apostila.franquia_ou_propria == 0 && apostila.de_qual_escola != 2" style="background-color: transparent;box-shadow: none !important;">
+            <img *ngIf="apostila.active == 1" src="{{apostila.img_apostila}}" style="width: 100%;" (click)=abrirApostila(apostila)/>
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+          <ion-card *ngIf="apostila.nivel <= apostila.nivel_do_usuario && apostila.pago == 1 && apostila.franquia_ou_propria == 0 && apostila.de_qual_escola == 2" style="background-color: transparent;box-shadow: none !important;">
+            <img *ngIf="apostila.active == 1" src="{{apostila.img_apostila}}" style="width: 100%;" (click)=abrirApostila(apostila)/>
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+          <ion-card *ngIf="apostila.nivel > apostila.nivel_do_usuario && apostila.pago == 1 && apostila.franquia_ou_propria == 0 && apostila.de_qual_escola == 2" style="background-color: transparent;box-shadow: none !important;">
+            <img *ngIf="apostila.active == 0 || apostila.active == 1" src="{{apostila.img_apostila_disabilitada}}" style="width: 100%;" />
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+          <ion-card *ngIf="apostila.numero_apostila > apostila.nivel_do_usuario && apostila.franquia_ou_propria == 0 && apostila.de_qual_escola != 2" style="background-color: transparent;box-shadow: none !important;">
+            <img *ngIf="apostila.active == 0 || apostila.active == 1" src="{{apostila.img_apostila_disabilitada}}" style="width: 100%;" />
+            <div style="position: relative; width: 100%; text-align: center; font-size: 0.7em;color: white; font-weight: bolder;">{{apostila.nome_apostila}}</div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

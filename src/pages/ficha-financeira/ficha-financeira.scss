@@ -1,0 +1,24 @@
+page-ficha-financeira {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+        }
+      }
+    .corpo {
+        background-color: #202020;    
+    }
+    .nome{
+        position: relative;
+        top: 30%;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bolder;
+        background: -webkit-linear-gradient(30deg,#5fc167,#318331);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+}

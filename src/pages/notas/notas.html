@@ -1,0 +1,62 @@
+<!--
+  Generated template for the MaisPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="corpo">
+  <ion-grid no-padding>
+    <ion-row *ngFor="let nota of notas">
+      <ion-card
+        style="background-color: transparent;border-bottom-color: transparent !important;box-shadow: none !important;">
+        <br><br><br>
+        <div *ngIf="nota.menor == 'Sim' && nota.media_geral != 'Não há lançamentos'" 
+          style="position: relative; width: 20%; height: 16%; left: 39%; font-size: 1.0em;color: white; font-weight: bolder; background-color: red; border-radius: 50%;">
+          <div
+            style="margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; font-size: 1.2em;color: white; font-weight: bolder; text-align: center;">
+            {{nota.media_geral}}
+          </div>
+        </div>
+        <div *ngIf="nota.menor == 'Não' && nota.media_geral != 'Não há lançamentos'"
+          style="position: relative; width: 20%; height: 16%; left: 39%; font-size: 1.0em;color: white; font-weight: bolder; background-color: green; border-radius: 50%;">
+          <div
+            style="margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; font-size: 1.2em;color: white; font-weight: bolder; text-align: center;">
+            {{nota.media_geral}}
+          </div>
+        </div><div *ngIf="nota.media_geral == 'Não há lançamentos'"
+        style="position: relative; width: 20%; height: 16%; left: 39%; font-size: 1.0em;color: white; font-weight: bolder; background-color: rgb(190, 190, 6); border-radius: 50%;">
+        <div
+          style="margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); width: 100%; font-size: 0.8em;color: white; font-weight: bolder; text-align: center;">
+          {{nota.media_geral}}
+        </div>
+      </div>
+        <br><br><br><br>
+        <div
+          style="position: relative; text-align: center; font-size: 1.3em;color: white; font-weight: bolder; width: 100%;">
+          Minhas Notas</div>
+        <br><br>
+        <div style="position: relative; left: 5%; font-size: 0.9em;color: white; font-weight: bolder; width: 100%;">
+          Prova Teórica: {{nota.nota_prova_teorica}}</div>
+        <br><br>
+        <div *ngIf="nota.nota_trabalho"
+          style="position: relative; left: 5%; font-size: 0.9em;color: white; font-weight: bolder; width: 100%;">
+          Prova Prática: {{nota.nota_trabalho}}</div>
+        <div *ngIf="nota.media_pratica"
+          style="position: relative; left: 5%; font-size: 0.9em;color: white; font-weight: bolder; width: 100%;">
+          Prova Prática: {{nota.media_pratica}}</div>
+        <br><br>
+        <div *ngIf="dados.dados.aluno == 0"
+          style="position: relative; left: 5%; font-size: 0.9em;color: white; font-weight: bolder; width: 100%;">
+          Frequência: {{nota.media_trabalho}}</div>
+        <div *ngIf="nota.media_trabalho && dados.dados.aluno != 0"
+          style="position: relative; left: 5%; font-size: 0.9em;color: white; font-weight: bolder; width: 100%;">
+          Média trabalhos: {{nota.media_trabalho}}</div>
+        <br><br>
+        <div *ngIf="dados.dados.aluno != 0" style="position: relative; left: 5%; font-size: 0.9em;color: white; font-weight: bolder; width: 100%;">
+          Frequência: {{nota.presenca}}</div>
+        <br><br><br><br><br><br>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>

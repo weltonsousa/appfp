@@ -1,0 +1,16 @@
+PODS:
+  - AccountKit (4.35.0)
+
+DEPENDENCIES:
+  - AccountKit (~> 4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AccountKit
+
+SPEC CHECKSUMS:
+  AccountKit: 870ccaf5d33facda9408783e28fbe68c5211e069
+
+PODFILE CHECKSUM: d91fa2ff78a98e875eb5d56a8b705db41df382d1
+
+COCOAPODS: 1.7.5

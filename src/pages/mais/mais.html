@@ -1,0 +1,38 @@
+<!--
+  Generated template for the MaisPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="corpo">
+  <div style="text-align: center; width: 70%;">
+    <img class="img" src="{{img_usuario}}">
+  </div>
+  <div class="nome">{{nome}}</div>
+  <div class="tipoDeAssinatura" *ngIf="tipo == '3'">Assinatura: Premium</div>
+  <div class="tipoDeAssinatura" *ngIf="tipo == '0'">Assinatura: Free</div>
+  <ion-list no-lines style="position: relative; top: 40%;">
+    <ion-item style="background-color: transparent; height: 50px;">
+      <img class="imgNotificacao" style="top: 60%; left: 31%;" src="assets/img/Ficha Financeira.png">
+      <button ion-button class="btnNotificacao" style="top: 50%; left: 33%;" (click)="notificacoes()">Ficha
+        financeira</button>
+    </ion-item>
+    <ion-item *ngIf="aluno == '1'" style="background-color: transparent;height: 50px;">
+      <img class="imgNotificacao" style="top: 60%;left: 38%;" src="assets/img/Ajuda.png">
+      <button ion-button class="btnNotificacao" style="top: 50%;left: 33%;"><a href="https://www.gracomonline.com.br/site/suporte.html" style="color: #A7A5A4;">Ajuda</a></button>
+    </ion-item>
+    <ion-item *ngIf="aluno == '0'" style="background-color: transparent;height: 50px;">
+      <img class="imgNotificacao" style="top: 60%;left: 38%;" src="assets/img/Ajuda.png">
+      <button ion-button class="btnNotificacao" style="top: 50%;left: 33%;"><a href="https://www.fpeduc.com/suporte.php" style="color: #A7A5A4;">Ajuda</a></button>
+    </ion-item>
+    <ion-item *ngIf="aluno == '2'" style="background-color: transparent;height: 50px;">
+      <img class="imgNotificacao" style="top: 60%;left: 38%;" src="assets/img/Ajuda.png">
+      <button ion-button class="btnNotificacao" style="top: 50%;left: 33%;"><a href="https://imugi.com.br/suporte.html" style="color: #A7A5A4;">Ajuda</a></button>
+    </ion-item>
+    <ion-item style="background-color: transparent;height: 50px;">
+      <img class="imgNotificacao" style="top: 60%;left: 38%;" src="assets/img/Sair.png">
+      <button ion-button class="btnNotificacao" style="top: 50%;left: 33%;" (click)="sair()">Sair</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

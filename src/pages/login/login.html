@@ -1,0 +1,34 @@
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="assets/img/Perfil_Aluno.png" style="position: relative;left: 40%; width:90px;height:90px;">
+  <div style="position: relative; color: #20953d; font-size: 0.9em; font-weight: bolder; text-align: center;">
+    <br>Bem-vindo de volta aos <br>estudos</div>
+  <ion-item class="ion-card ion-item">
+    <ion-input type="text" [(ngModel)]="email" placeholder="E-mail" class="ion_input" name="vehicle_cust_name">
+    </ion-input>
+    <ion-icon name="person" class="ion_icon" item-right small></ion-icon>
+  </ion-item>
+  <ion-item class="ion-card ion-item">
+    <ion-input type="password" [(ngModel)]="senha" placeholder="Senha" class="ion_input"></ion-input>
+    <ion-icon name="unlock" class="ion_icon" item-right small></ion-icon>
+  </ion-item>
+  <button padding ion-button round class="btn" color="verde" (click)="logar()">Entrar</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div (click)="esqueci()"
+    style="position: relative; color: #a2a2a2; font-size: 1.1em; font-weight: bolder; text-align: center;">Esqueceu a
+    senha?</div>
+</ion-content>

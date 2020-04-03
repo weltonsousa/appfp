@@ -1,0 +1,30 @@
+<!--
+  Generated template for the EscolhaModulosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color: #202020;">
+  <img src="{{curso.img_curso_play}}" style="background-color: #202020; width: 100%;" />
+  <div *ngIf="curso.nome" style="position: absolute; top: 28%; left: 4%; color: white; font-size: 1.0em; font-weight: bolder; ">{{curso.nome}} - {{modulo.nome_do_modulo}}</div>
+  <div *ngIf="curso.nome_do_curso" style="position: absolute; top: 28%; left: 4%; color: white; font-size: 1.0em; font-weight: bolder; ">{{curso.nome_do_curso}} - {{modulo.nome_do_modulo}}</div>
+  <div style="position: absolute; top: 32%; left: 4%; color: #9E9C9C; font-size: 1.0em; font-weight: 400; width: 94%;">{{modulo.descricao}}</div>
+  <ion-grid style="position: absolute; top:40%; width: 100%">
+
+    <ion-row *ngFor="let aula of aulas" (click)=escolherAula(aula)>
+        <ion-card style="height: 110px; background-color: transparent ;border-bottom-color: transparent !important;box-shadow: none !important;">
+          <img src="{{aula.img_aula}}" style="position: absolute; width: 20%; border-radius: 10px;" />
+          <div style="position: relative; left: 25%; color: white; font-size: 0.9em; font-weight: bolder; top: 10%; width: 100%;">{{aula.titulo_da_aula}}</div>
+          <div style="position: relative; color: #9E9C9C; font-size: 1.0em; font-weight: 400; width: 100%; top: 45%;">{{aula.descricao_da_aula}}</div>
+        </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>

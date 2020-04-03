@@ -1,0 +1,30 @@
+<ion-content>
+  <br>
+  <img src="assets/img/Seta_Retorno.png" style="position: relative;left: 8%; width:30px;height:30px;" (click)="back()">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="assets/img/Icone_Recuperar_Senha.png" style="position: relative;left: 40%; width:90px;height:90px;">
+  <div style="position: relative; color: #20953d; font-size: 0.9em; font-weight: bolder; text-align: center;">
+    <br>Digite seu e-mail para<br>para recuperar a senha</div>
+  <ion-item class="ion-card ion-item">
+    <ion-input type="text" [(ngModel)]="email" placeholder="E-mail" class="ion_input">
+    </ion-input>
+    <ion-icon name="person" class="ion_icon" item-right small></ion-icon>
+  </ion-item>
+  <button padding ion-button round class="btn" color="verde" (click)="reset()">Recuperar Senha</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div (click)="faq()"
+    style="position: relative; color: #a2a2a2; font-size: 1.1em; font-weight: bolder; text-align: center;">Dificuldade de Acesso?</div>
+</ion-content>

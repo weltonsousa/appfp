@@ -1,0 +1,46 @@
+page-detalhe-da-aula-curso-principal {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+        }
+      }
+    .ion-card{
+        background-color: rgba(113, 113, 113, 0.32);
+        margin:20px auto;
+        width: 65%;
+        border-radius: 20px !important;
+        }
+        .ion_input{
+        color:#f4f4f4;
+        opacity: 0.6;
+        font-size: 15px;
+        }
+        .ion_icon{
+        color:#f4f4f4;
+        opacity: 0.6;
+        font-size: 5px;
+        }
+        .home_back{
+         background-color: #15161D;
+        }
+        .item-inner, ion-item {
+         border-bottom-color: transparent !important;
+         box-shadow: none !important;
+         }
+         .btn {
+             width: 65%;
+             top: 30%;
+             left: 17%;
+             text-transform: none;
+         }
+         .btnDonwload {
+          width: 40%;
+          top: 30%;
+          left: 30%;
+          text-transform: none;
+      }
+}

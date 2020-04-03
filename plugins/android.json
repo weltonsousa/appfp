@@ -1,0 +1,56 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-accountkit": {
+      "APP_ID": "767580770058358",
+      "APP_NAME": "CodeSundar Labs",
+      "CLIENT_TOKEN": "6d97e93101b1681dfcb868539f6161ea",
+      "API_VERSION": "v1.1",
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-fingerprint-aio": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.FP"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.FP"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.FP"
+    }
+  }
+}

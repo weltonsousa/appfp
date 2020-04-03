@@ -1,0 +1,39 @@
+<ion-content>
+  <br>
+  <img src="assets/img/Seta_Retorno.png" style="position: relative;left: 8%; width:30px;height:30px;" (click)="back()">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="position: relative; left: 5%; font-size: 1.5em; font-weight: bolder; color: #20953d;">Como podemos ajudar?</div>
+  <br>
+  <div id="search" class="search-input-keyword">
+    <ion-searchbar class="ion-searchtext" id="ion-searchtext" placeholder="Oque você precisa?" [(ngModel)]="queryText"
+      (ionInput)="filter($event)" clearInput></ion-searchbar>
+  </div>
+  <ion-grid style="width: 100%" *ngIf="selected == '0'">
+    <ion-row *ngFor="let tudo of topicos" (click)=escolher(tudo)>
+      <ion-card
+        style="height: 55px; background-color: transparent ;border-bottom-color: transparent !important;box-shadow: none !important;">
+        <div
+          style="position: relative; left: 5%; color: #20953d; font-size: 1.3em; font-weight: bolder; top: 30%; width: 50%;">
+          {{tudo.nome_categoria}}</div>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+  <ion-grid style="width: 100%" *ngIf="selected == '1'">
+    <ion-row *ngFor="let tudo of subCategorias" (click)=escolher(tudo)>
+      <ion-card
+        style="height: 100px; background-color: transparent ;border-bottom-color: transparent !important;box-shadow: none !important;">
+        <div
+          style="position: relative; left: 5%; color: #20953d; font-size: 1.3em; font-weight: bolder; top: 30%; width: 90%;">
+          {{tudo.de_qual_categoria}}</div>
+          <div
+          style="position: relative; left: 5%; color: #a2a2a2; font-size: 0.8em; font-weight: bolder; top: 30%; width: 100%;">
+          {{tudo.texto_subcategoria_pergunta}}</div>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>
